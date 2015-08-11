@@ -1,0 +1,281 @@
+/*GENERAL*/
+
+a {
+	text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #5E5E5E;
+  color: white;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+/*FONTS*/
+
+header {
+  font-family: 'Fredericka the Great', cursive;
+}
+
+nav {
+  font-family: 'Fredericka the Great', cursive;
+}
+
+h3 {
+  font-family: 'Fredericka the Great', cursive;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/*HEADER*/
+
+header {
+  text-align: center;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: normal;
+	margin-bottom: -20px;
+  color: white;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: normal;
+  border: 10px white;
+  color: white;
+}
+
+/*NAVIGATION*/
+
+nav {
+  height: 80px;
+  background: linear-gradient(to bottom, 
+    rgba(85,85,85,1), rgba(85,85,85,0), rgba(85,85,85,1));
+  /*background-color: #555555;*/
+}
+
+nav a{
+  float: left;
+  display: inline;
+  color: white;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+/*HOME IMAGES*/
+
+.about {
+	font-family: 'Fredericka the Great', cursive;
+  text-align: center;
+  margin: 20px 10px;
+  background-size: 100% 100%;
+  box-shadow: inset 0px 0px 1px 1000px rgba(0,0,0, .2), 
+  	5px 5px 5px rgba(0,0,0, .5);
+  border-radius: 10px;
+	background-image: url('../img/about.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.about a {
+  color: white;
+  font-size: 30px;
+  display: block;
+  padding: 30px;
+}
+
+.contact {
+	font-family: 'Fredericka the Great', cursive;
+  text-align: center;
+  margin: 20px 10px;
+  background-size: 100% 150%;
+  box-shadow: inset 0px 0px 1px 1000px rgba(0,0,0, .2), 
+  	5px 5px 5px rgba(0,0,0, .5);
+  border-radius: 10px;
+	background-image: url('../img/contact.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.contact a {
+  color: white;
+  font-size: 30px;
+  display: block;
+  padding: 30px;
+}
+
+.cv {
+	font-family: 'Fredericka the Great', cursive;
+  text-align: center;
+  margin: 20px 10px;
+  background-size: 100% 125%;
+  box-shadow: inset 0px 0px 1px 1000px rgba(0,0,0, .2), 
+  	5px 5px 5px rgba(0,0,0, .5);
+  border-radius: 10px;
+	background-image: url('../img/cv.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.cv a {
+  color: white;
+  font-size: 30px;
+  display: block;
+  padding: 30px;
+}
+
+.exhibits {
+	font-family: 'Fredericka the Great', cursive;
+  text-align: center;
+  margin: 20px 10px;
+  background-size: 100% 250%;
+  box-shadow: inset 0px 0px 1px 1000px rgba(0,0,0, .2), 
+  	5px 5px 5px rgba(0,0,0, .5);
+  border-radius: 10px;
+	background-image: url('../img/exhibits.png');
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.exhibits a {
+  color: white;
+  font-size: 30px;
+  display: block;
+  padding: 30px;
+}
+
+.portfolio {
+	font-family: 'Fredericka the Great', cursive;
+  text-align: center;
+  margin: 20px 10px;
+  background-size: 100% 250%;
+  box-shadow: inset 0px 0px 1px 1000px rgba(0,0,0, .2), 
+  	5px 5px 5px rgba(0,0,0, .5);
+  border-radius: 10px;
+	background-image: url('../img/portfolio.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.portfolio a {
+  color: white;
+  font-size: 30px;
+  display: block;
+  padding: 30px;
+}
+
+/*FOOTER*/
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+footer {
+  text-align: center;
+}
+
+/*ABOUT*/
+
+.profile-photo {
+  max-width: 90%;
+  margin-top: 20px;
+}
+
+.abouttext {
+  text-align: center;
+  width: 90%;
+  margin: 0 5% 5%;
+  border: 10px 0 0 0 white;
+}
+
+/*CONTACT*/
+
+#primary {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#secondary {
+  text-align: center;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 1px 40px 10px 30px;
+  background-image: url('../img/icons/email.png');
+  background-repeat: no-repeat;
+  background-size: 30px;
+  margin: 0 5px 10px 45px;
+}
+
+.mail a {
+  font-size: 20px;
+}
+
+.mail a:hover {
+  font-weight: bold;
+}
+
+/*EXHIBITS*/
+
+.exh3 {
+  text-align: center;
+}
+
+#exhibitslist a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#exhibitslist a:hover {
+  font-style: italic;
+}
+
+#exhibitslist a:visited {
+  
+  font-weight: normal;
+}
+
+#exhibitslist li {
+  margin:5px 5px 5px 0;
+}
+
+/*CV*/
+
+#pdf {
+  text-align: center;
+}
+
+/*PORTFOLIO*/
+
+#portfoliolist img {
+  max-width: 90%;
+}
+
+#portfoliolist {
+  list-style: none;
+}
+
+/*APIS*/
+
+.apish3 {
+  text-align: center;
+  font-weight: normal;
+}
+
+#apislist img {
+  max-width: 90%
+}
+
+#apislist {
+  list-style: none;
+}
