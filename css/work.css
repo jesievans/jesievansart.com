@@ -8,6 +8,7 @@ a {
 body {
   background-color: #5E5E5E;
   color: white;
+  margin: 0;
 }
 
 h3 {
@@ -36,6 +37,7 @@ body {
 
 header {
   text-align: center;
+  text-shadow: 0 4px 2px rgba(0,0,0,1);
 }
 
 h1 {
@@ -54,19 +56,71 @@ h2 {
 
 /*NAVIGATION*/
 
-nav {
-  height: 80px;
-  background: linear-gradient(to bottom, 
-    rgba(85,85,85,1), rgba(85,85,85,0), rgba(85,85,85,1));
-  /*background-color: #555555;*/
+.mainnav {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 5px;
 }
 
-nav a{
-  float: left;
-  display: inline;
-  color: white;
-  padding: 5px 10px;
-  font-size: 20px;
+.dropdown, .flyout {
+  position: relative;
+}
+
+.dropdown:after {
+  content: "\25BC";
+  font-size: 1em;
+  position: absolute;
+  right: 47%;
+  top: 40%;
+}
+
+.dropnav, .flyoutnav {
+  position: absolute;
+  display: none;
+}
+
+nav a:hover, nav a:focus{
+  font-weight: bold;
+}
+
+.dropdown:hover > .dropnav, .dropdown:focus > .dropnav {
+  display: block;
+  right: 13%;
+  top: 60%;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  background-color: #555555;
+  padding: 0 70px;
+}
+
+.flyout:hover > .flyoutnav, .flyout:focus > .flyoutnav {
+  display: block;
+  right: -105%;
+  top: 40%;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  background-color: #4C4C4C;
+  padding: 0 61px;
+}
+
+li.dropdown {
+  padding-bottom: 20px;
+}
+
+li.dropdown:hover, li.dropdown:focus {
+  background-color: #555555;
+}
+
+.dropnav li {
+  padding: 0 0 10px;
+}
+
+.selected {
+  font-style: italic;
+}
+
+.selected:after, .selected:before {
+  content: "~";
 }
 
 /*HOME IMAGES*/
@@ -74,6 +128,7 @@ nav a{
 .about {
 	font-family: 'Fredericka the Great', cursive;
   text-align: center;
+  text-shadow: 0 4px 2px rgba(0,0,0,1);
   margin: 20px 10px;
   background-size: 100% 100%;
   box-shadow: inset 0px 0px 1px 1000px rgba(0,0,0, .2), 
@@ -94,6 +149,7 @@ nav a{
 .contact {
 	font-family: 'Fredericka the Great', cursive;
   text-align: center;
+  text-shadow: 0 4px 2px rgba(0,0,0,1);
   margin: 20px 10px;
   background-size: 100% 150%;
   box-shadow: inset 0px 0px 1px 1000px rgba(0,0,0, .2), 
@@ -114,6 +170,7 @@ nav a{
 .cv {
 	font-family: 'Fredericka the Great', cursive;
   text-align: center;
+  text-shadow: 0 4px 2px rgba(0,0,0,1);
   margin: 20px 10px;
   background-size: 100% 125%;
   box-shadow: inset 0px 0px 1px 1000px rgba(0,0,0, .2), 
@@ -134,6 +191,7 @@ nav a{
 .exhibits {
 	font-family: 'Fredericka the Great', cursive;
   text-align: center;
+  text-shadow: 0 4px 2px rgba(0,0,0,1);
   margin: 20px 10px;
   background-size: 100% 250%;
   box-shadow: inset 0px 0px 1px 1000px rgba(0,0,0, .2), 
@@ -154,6 +212,7 @@ nav a{
 .portfolio {
 	font-family: 'Fredericka the Great', cursive;
   text-align: center;
+  text-shadow: 0 4px 2px rgba(0,0,0,1);
   margin: 20px 10px;
   background-size: 100% 250%;
   box-shadow: inset 0px 0px 1px 1000px rgba(0,0,0, .2), 
@@ -177,17 +236,26 @@ nav a{
   width: 30px;
   height: 30px;
   margin: 10px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 5px rgba(0,0,0, .4);
 }
 
 footer {
   text-align: center;
+  text-shadow: 0 4px 2px rgba(0,0,0,1);
 }
 
 /*ABOUT*/
 
+h3 {
+  text-shadow: 0 4px 2px rgba(0,0,0,1);
+}
+
 .profile-photo {
   max-width: 90%;
   margin-top: 20px;
+  box-shadow: inset 0px 0px 1px 1000px rgba(0,0,0, .2), 
+    5px 5px 5px rgba(0,0,0, .5);
 }
 
 .abouttext {
@@ -221,7 +289,7 @@ footer {
   font-size: 20px;
 }
 
-.mail a:hover {
+.mail a:hover, .mail a:focus {
   font-weight: bold;
 }
 
@@ -229,19 +297,20 @@ footer {
 
 .exh3 {
   text-align: center;
+  text-shadow: 0 4px 2px rgba(0,0,0,1);
 }
 
 #exhibitslist a {
-  text-decoration: underline;
+  text-shadow: 0 4px 2px rgba(0,0,0,1);
+  /*text-decoration: underline;*/
   font-weight: bold;
 }
 
-#exhibitslist a:hover {
+#exhibitslist a:hover , #exhibitslist a:focus {
   font-style: italic;
 }
 
 #exhibitslist a:visited {
-  
   font-weight: normal;
 }
 
@@ -265,6 +334,17 @@ footer {
   list-style: none;
 }
 
+.sdcredit {
+  font-size: .85em;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+#apislist img {
+  box-shadow: inset 0px 0px 1px 1000px rgba(0,0,0, .2), 
+    5px 5px 5px rgba(0,0,0, .5);
+}
+
 /*APIS*/
 
 .apish3 {
@@ -279,3 +359,27 @@ footer {
 #apislist {
   list-style: none;
 }
+
+/*OVERLAY*/
+/*
+#overlay {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  min-height: 2500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+}
+
+#overlay img {
+  margin-top: 10%;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+#overlay p {
+  color: white;
+}
+*/
