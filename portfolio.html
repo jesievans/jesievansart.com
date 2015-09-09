@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="css/work.css">
     <link rel="stylesheet" href="css/responsive.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/work.js"></script>
   </head>
   <body>
-    <header>
+    <header class="otherheader" class="group">
       <a href="index.html" id="logo">
         <h1>Jesi Evans</h1>
         <h2>Fiber Artist</h2>
       </a>
-      <nav>
+      <nav class="topnav">
         <ul class="mainnav">
             <li class="dropdown">
               <a href="index.html">Menu</a>
@@ -23,10 +25,10 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="exhibits.html">Exhibits</a></li>
+                <li><a href="exhibits.html" class="selected">Exhibits</a></li>
                 <li><a href="img/CV.pdf">CV</a></li>
                 <li class="flyout">
-                  <a href="portfolio.html" class="selected">Portfolio</a>
+                  <a href="portfolio.html">Portfolio</a>
                   <ul class="flyoutnav">
                     <li><a href="apis.html">Apis</a></li>
                     <li><a href="connection.html">Connection</a></li>
@@ -38,29 +40,29 @@
         </ul>
       </nav>
     </header>
+    <div class="group"></div>
     <div id="wrapper">
-      <section>
-        <ul id="portfoliolist">
-          <li>
-            <a href="apis.html">
-              <img src="img/apis/hive.JPG" alt="" class="apis">
-              <p>Apis body of work.</p>
-            </a>
-          </li>
-          <li>
-            <a href="img/connection/atfirstthereismovement.jpg">
-              <img src="img/connection/atfirstthereismovement.jpg" alt="" class="connection">
-              <p>Connection body of work.</p>
-            </a>
-          </li>
-          <li>
-            <a href="img/archive/sddarger.jpg">
-              <img src="img/archive/sddarger.jpg" alt="" class="archive">
-              <p>Archive.</p>
-            </a>
-          </li>
-        </ul>
-      </section>
+      <ul id="portfoliolist">
+         <li>
+          <a href="apis.html">
+            <h3>Apis</h3>
+            <img src="img/apis/hive.JPG" alt="Apis body of work" class="apis">
+          </a>
+        </li>
+        <li>
+          <a href="connection.html">
+            <h3>Connection</h3>
+            <img src="img/connection/atfirst.jpg" alt="Connection body of work" class="connection">
+           </a>
+        </li>
+        <li>
+          <a href="archive.html">
+             <h3>Archive</h3>
+            <img src="img/archive/sddarger.jpg" alt="archive" class="archive">
+           </a>
+         </li>
+      </ul>
+      <div class="group"></div>
       <footer>
         <a href="https://www.facebook.com/jesievans"><img src="img/icons/facebook.png" alt="Facebook Logo" class="social-icon"></a>
         <a href="https://www.etsy.com/shop/JesiEvansArt"><img src="img/icons/etsy.png" alt="Etsy Logo" class="social-icon"></a>
@@ -68,7 +70,5 @@
         <p>&copy; 2015 Jesi Evans.</p>
       </footer>
     </div>
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="js/work.js"type="text/javascript" charset="utf-8"></script>
   </body>
 </html>
