@@ -273,6 +273,16 @@ textarea {
 
 #pdf {
   text-align: center;
+  max-width: 666px
+}
+
+#pdf p {
+  font-size: 1.5em;
+}
+
+#pdf a {
+  text-shadow: 0 4px 2px rgba(0,0,0,1);
+  font-weight: bold;
 }
 
 /*PORTFOLIO*/
@@ -447,7 +457,7 @@ textarea {
   }
 
   .abouttext, form, #exhibitslist, #portfoliolist, 
-  #apislist, #connectionlist, #archivelist {
+  #apislist, #connectionlist, #archivelist, #pdf {
     margin-left: 180px;
     width: 75%;
   }
@@ -501,17 +511,13 @@ textarea {
     clear: left;
   }
 
-  form {
+  form, #pdf {
     margin-left: 25%;
   }
 
 }
 
 @media only screen and (min-width: 1440px) {
-
-  form {
-    margin-left: 25%;
-  }
 
 }
 
