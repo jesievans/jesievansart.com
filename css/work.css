@@ -141,7 +141,7 @@ nav a:hover, nav a:focus{
 
 .portfolio {
   background-size: 100% 250%;
-	background-image: url('../img/portfolio.jpg');
+	background-image: url('../img/connection/sdwitheachdetail.jpg');
 	background-position: center top;
 }
 
@@ -179,6 +179,10 @@ h3 {
 }
 
 /*CONTACT*/
+
+#form-messages {
+  text-align: center;
+}
 
 form {
   font-family: 'Fredericka the Great', cursive;
@@ -319,6 +323,21 @@ textarea {
   font-weight: normal;
 }
 
+/*CONNECTION*/
+
+.statement {
+  width: 80%;
+  margin: 0 10%;
+  text-align: center;
+  max-width: 666px;
+}
+
+.statement p {
+  font-size: 1.5em;
+}
+
+
+
 /*MEDIA QUERIES*/
 
 @media only screen and (min-width: 540px) {
@@ -457,7 +476,7 @@ textarea {
   }
 
   .abouttext, form, #exhibitslist, #portfoliolist, 
-  #apislist, #connectionlist, #archivelist, #pdf {
+  #apislist, #connectionlist, #archivelist, #pdf, .statement {
     margin-left: 180px;
     width: 75%;
   }

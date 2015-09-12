@@ -31,7 +31,7 @@ $(document).ready(function() {
       }).done(function(response) {
           $(formMessages).removeClass('error');
           $(formMessages).addClass('success');
-          $(formMessages).text(response);
+          $(formMessages.h3).text(response);
           $('#name').val('');
           $('#email').val('');
           $('#message').val('');
