@@ -12,82 +12,70 @@
     <script type="text/javascript" src="js/work.js"></script>
   </head>
   <body>
-    <header class="otherheader" class="group">
-      <a href="index.html" id="logo">
-        <h1>Jesi Evans</h1>
-        <h2>Fiber Artist</h2>
-      </a>
-      <nav class="topnav">
-        <ul class="mainnav">
-            <li class="dropdown">
-              <a href="index.html" class="droplink">Menu</a>
-              <ul class="dropnav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" class="selected">Contact</a></li>
-                <li><a href="exhibits.html">Exhibits</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li class="flyout">
-                  <a href="portfolio.html" class="flylink">Portfolio</a>
-                  <ul class="flyoutnav">
-                    <li><a href="apis.html">Apis</a></li>
-                    <li><a href="connection.html">Connection</a></li>
-                    <li><a href="archive.html">Archive</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-        </ul>
-      </nav>
-    </header>
-    <div class="group"></div>
-    <div id="form-messages"><h3></h3></div>
-    <div id="formdiv">
-      <form id="contactform" method="post" action="php/mailer.php">
-        <br><h3>Contact Form</h3><br>
-        <div class="forminfo">
-          <label for="firstname">Name:</label><br>
-          <input type="text" name="name" id="name" required>
-          <br><br>
-          <label for="email">Email:</label><br>
-          <input type="email" name="email" id="email" required>
-          <br><br><br>
-        </div>
-        <div class="forminterest">
-          <label for="exhibits">I am interested in:</label><br><br>
-          <input type="checkbox" name="exhibits" value="exhibits" class="checkbox">Exhibits<br>
-          <input type="checkbox" name="commission" value="commission" class="checkbox">Commissioned Work<br>
-          <input type="checkbox" name="sales" value="sales" class="checkbox">Art Sales<br>
-          <input type="checkbox" name="collaboration" value="collaboration" class="checkbox">Collaboration<br>
-          <input type="checkbox" name="general" value="general" class="checkbox">General Question<br><br>
-        </div>
-        <div class="formcomments">
-          <label for="message">Message:</label><br>
-          <textarea name="message" id="message" required></textarea>
-          <br><br>
-          <input type="submit" value="Submit" class="submit"><br><br>
-        </div>
-      </form>
+    <div class="wrapper">
+      <header class="otherheader" class="group">
+        <a href="index.html" id="logo">
+          <h1>Jesi Evans</h1>
+          <h2>Fiber Artist</h2>
+        </a>
+        <nav class="topnav">
+          <ul class="mainnav">
+              <li class="dropdown">
+                <a href="index.html" class="droplink">Menu</a>
+                <ul class="dropnav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html" class="selected">Contact</a></li>
+                  <li><a href="exhibits.html">Exhibits</a></li>
+                  <li><a href="cv.html">CV</a></li>
+                  <li class="flyout">
+                    <a href="portfolio.html" class="flylink">Portfolio</a>
+                    <ul class="flyoutnav">
+                      <li><a href="apis.html">Apis</a></li>
+                      <li><a href="connection.html">Connection</a></li>
+                      <li><a href="archive.html">Archive</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="group"></div>
+      <div id="form-messages"></div>
+      <div id="formdiv">
+        <form id="contactform" method="post" action="php/mailer.php">
+          <br><h3>Contact Form</h3><br>
+            <label for="firstname">Name:</label><br>
+            <input type="text" name="name" id="name" required>
+            <br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" required>
+            <br><br><br>
+            <p>I am interested in:</p>
+            <input type="checkbox" name="exhibits" value="exhibits" class="checkbox">
+            <label for="exhibits">Exhibits</label><br>
+            <input type="checkbox" name="commission" value="commission" class="checkbox">
+            <label for="commission">Commissioned Work</label><br>
+            <input type="checkbox" name="sales" value="sales" class="checkbox">
+            <label for="sales">Art Sales</label><br>
+            <input type="checkbox" name="collaboration" value="collaboration" class="checkbox">
+            <label for="collaboration">Collaboration</label><br>
+            <input type="checkbox" name="general" value="general" class="checkbox">
+            <label for="general">General Questions</label><br><br>
+            <label for="message">Message:</label><br>
+            <textarea name="message" id="message" required></textarea>
+            <br><br>
+            <input type="submit" value="Submit" class="submit"><br><br>
+        </form>
+      </div>
+      <div class="group"></div>
+      <footer>
+        <a href="https://www.facebook.com/jesievans"><img src="img/icons/facebook.png" alt="Facebook Logo" class="social-icon"></a>
+        <a href="https://www.etsy.com/shop/JesiEvansArt"><img src="img/icons/etsy.png" alt="Etsy Logo" class="social-icon"></a>
+        <a href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button"><img src="img/icons/linkedin.png" alt="Linkedin Logo" class="social-icon"></a>
+        <p>&copy; 2015 Jesi Evans.</p>
+      </footer>
     </div>
-
-<!-- Before I created the html form -->
-
-      <!-- <section id="primary">
-        <h3>General Information</h3>
-        <p>I can be contacted through email if you are interested in commissioned work, exhibits or have any other inquiries.</p>
-      </section>
-      <section id="secondary">
-        <h3>Contact Details</h3>
-        <ul class="contact-info">
-          <li class="mail"><a href="mailto:jesievans@gmail.com">jesievans@gmail.com</a></li>
-      </section> -->
-
-    <div class="group"></div>
-    <footer>
-      <a href="https://www.facebook.com/jesievans"><img src="img/icons/facebook.png" alt="Facebook Logo" class="social-icon"></a>
-      <a href="https://www.etsy.com/shop/JesiEvansArt"><img src="img/icons/etsy.png" alt="Etsy Logo" class="social-icon"></a>
-      <a href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button"><img src="img/icons/linkedin.png" alt="Linkedin Logo" class="social-icon"></a>
-      <p>&copy; 2015 Jesi Evans.</p>
-    </footer>
   </body>
 </html>

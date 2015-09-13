@@ -1,80 +1,172 @@
-/*@media screen and (min-width: 480px) {*/
-  
-  
-  
-  /***************************
-  TWO COLUMN LAYOUT
-  ***************************/
-  
- /* #primary {
-    width: 50%;
-    float: left;
-  }
-  
-  #secondary {
-    width: 40%;
-    float: right;
-  }*/
-  
-  
-  
-  /***************************
-  PAGE: PORTFOLIO
-  ***************************/
-  
-/*  #gallery li {
-    width: 28.3333%;
-  }
-  
-  #gallery li:nth-child(4n) {
-    clear: left;
-  }*/
-  
-  
-  /***************************
-  PAGE: ABOUT
-  ***************************/
-  
- /* .profile-photo {
-    float: left;
-    margin: 0 5% 80px 0;
-  }
-}
+/*MEDIA QUERIES*/
 
-@media screen and (min-width: 660px) {*/
-  
-  /***************************
-  PAGE: HEADER
-  ***************************/
-  
- /* nav {
-    background: none;
-    float: right;
-    font-size: 1.125em;
-    margin-right: 5%;
-    text-align: right;
-    width: 45%;
-  }
-  
-  #logo {
+@media only screen and (min-width: 540px) {
+
+  #containerdiv {
+    width: 100%;
     float: left;
-    margin-left: 5%;
-    text-align: left;
-    width: 45%;
   }
-  
+
+  #containerdiv div {
+    float: left;
+    width: 45%;
+    margin-top: 0;
+    margin-right: 20px;
+  }
+
   h1 {
+    width: 100%;
+    text-align: left;
+    margin: 10px 0 17px 10px;
     font-size: 2.5em;
   }
-  
-  h2 {
-    font-size: 0.825em;
-    margin-bottom: 20px;
-  }
-  
-  header {
-    border-bottom: 5px solid #997316;
-    margin-bottom: 60px;
-  }
-}*/
 
+  h1:after {
+    content: " ~ Fiber Artist";
+  }
+
+  h2 {
+    display: none;
+  }
+
+  .abouttext {
+    float: left;
+  }
+
+  .profile-photo {
+    float: left;
+    width: 50%;
+    max-width: 360px;
+    margin: 0 10px 10px 10px;
+  }
+
+  #primary, #secondary {
+    float: left;
+    width: 45%;
+    margin-left: 10px;
+  }
+
+  #secondary {
+    margin-top: 30px;
+  }
+
+}
+
+
+@media only screen and (min-width: 640px) {
+
+  .topnav {
+    text-align: left;
+    margin-right: 0;
+  }
+
+  .mainnav li {
+    padding: 0 5px;
+  }
+
+  #exhibitslist {
+    float: left;
+  }
+
+  .col1, .col2 {
+    float: left;
+    width: 45%;
+  }
+
+  .col1 {
+    margin-right: 40px; 
+  }
+
+  #portfoliolist, #apislist, 
+  #connectionlist, #archivelist {
+    float: left;
+  }
+
+  #portfoliolist li, #apislist li, 
+  #connectionlist li, #archivelist li {
+    float: left;
+    width: 45%;
+    margin-right: 20px;
+  }
+
+}
+
+
+@media only screen and (min-width: 740px) {
+
+  #containerdiv div {
+    font-size: 1.5em;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+}
+
+
+@media only screen and (min-width: 840px) {
+
+  h1 {
+    font-size: 4em;
+  }
+
+  .navdiv { 
+    width: 170px; 
+    margin: 15px; 
+    position: relative; 
+  }
+
+  .mainnav { 
+    width: 170px; 
+    position: fixed; 
+    margin-left: 0; 
+  }
+
+  .abouttext, form, #exhibitslist, #portfoliolist, 
+  #apislist, #connectionlist, #archivelist, #pdf, .statement {
+    margin-left: 180px;
+  }
+
+}
+
+
+@media only screen and (min-width: 940px) {
+
+  #containerdiv div {
+    width: 30%;
+  }
+
+}
+
+
+@media only screen and (min-width: 1140px) {
+
+  #portfoliolist li, #apislist li, 
+  #connectionlist li, #archivelist li {
+    width: 30%;
+  }
+
+  #connectionlist li:nth-child(4n) {
+    clear: left;
+  }
+
+}
+
+
+@media only screen and (min-width: 1240px) {
+
+	.wrapper {
+		width: 80%;
+	}
+
+}
+
+
+/*CLEARFIX*/
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}

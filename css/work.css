@@ -11,50 +11,83 @@ body {
   margin: 0;
 }
 
-h3 {
-  font-weight: normal;
-  font-size: 1.5em;
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
 }
 
-#exhibitslist, .abouttext p, #primary p, #secondary a, 
-#portfoliolist p, #apislist p, #archivelist p, #connectionlist p {
-  font-size: 1.5em;
+#containerdiv div, .profile-photo, form, #apislist img, 
+#portfoliolist img, #connectionlist img, #archivelist img {
+  box-shadow: inset 0px 0px 1px 1000px rgba(0,0,0, .2), 
+    5px 5px 5px rgba(0,0,0, .5);
 }
+
 
 /*FONTS*/
 
-header, nav, h3 {
+header, nav, h3, #containerdiv div, form, .submit {
   font-family: 'Fredericka the Great', cursive;
 }
 
-body {
+body, input, textarea {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-/*HEADER*/
 
-header {
+/*FONT SIZE & WEIGHT, TEXT ALIGNMENT & SHADOW*/
+
+header, #containerdiv div, footer, .abouttext, #form-messages, 
+form, .exh3, #pdf, #portfoliolist h3, .apish3, .study, .statement {
   text-align: center;
+}
+
+h3, h1, h2, .apish3, .study, #exhibitslist a:visited {
+  font-weight: normal;
+}
+
+nav a:hover, nav a:focus, #exhibitslist a, #pdf a {
+  font-weight: bold;
+}
+
+h3, header, #containerdiv div, footer, form, .submit, .exh3, 
+#exhibitslist a, #pdf a {
   text-shadow: 0 4px 2px rgba(0,0,0,1);
 }
 
+h3, #exhibitslist li, .abouttext p, #primary p, #secondary a, 
+#apislist p, #archivelist p, #connectionlist p, .submit, nav a, #pdf p, .statement p {
+  font-size: 1.5em;
+}
+
+h2, .about a, .portfolio a, .contact a, .cv a, .exhibits a {
+  font-size: 2em;
+}
+
 h1 {
-	font-size: 3em;
-	font-weight: normal;
-	margin-bottom: -20px;
+  font-size: 3em;
+}
+
+form, .sdcredit {
+  font-size: 1.25em;
+}
+
+#exhibitslist a:hover , #exhibitslist a:focus {
+  font-style: italic;
+}
+
+
+/*HEADER*/
+
+h1 {
+	margin-bottom: 0;
 }
 
 h2 {
-	font-size: 2em;
-	font-weight: normal;
-  border: 10px white;
+  margin-top: 0;
 }
+
 
 /*NAVIGATION*/
-
-nav a {
-  font-size: 1.5em;
-}
 
 .mainnav, .dropnav, .flyoutnav {
   padding-left: 0;
@@ -69,10 +102,6 @@ nav a {
   display: none;
 }
 
-nav a:hover, nav a:focus{
-  font-weight: bold;
-}
-
 .dropdown:hover > .dropnav, .dropdown:focus > .dropnav {
   display: block;
   background-color: #555555;
@@ -83,10 +112,6 @@ nav a:hover, nav a:focus{
   background-color: #4C4C4C;
 }
 
-.flyoutnav {
-  padding-bottom: 15px;
-}
-
 .selected {
   font-style: italic;
 }
@@ -95,15 +120,16 @@ nav a:hover, nav a:focus{
   content: "~";
 }
 
+
 /*HOME IMAGES*/
 
+.about a, .portfolio a, .contact a, .cv a, .exhibits a {
+  display: block;
+  padding: 30px;
+}
+
 #containerdiv div {
-	font-family: 'Fredericka the Great', cursive;
-  text-align: center;
-  text-shadow: 0 4px 2px rgba(0,0,0,1);
-  margin: 20px 10px;
-  box-shadow: inset 0px 0px 1px 1000px rgba(0,0,0, .2), 
-    5px 5px 5px rgba(0,0,0, .5);
+  margin: 20px 0;
   border-radius: 10px;
   background-repeat: no-repeat;
 }
@@ -112,13 +138,6 @@ nav a:hover, nav a:focus{
   background-size: 100% 250%;
 	background-image: url('../img/connection/sdatfirstdetail.jpg');
 	background-position: center;
-}
-
-.about a, .portfolio a, .contact a, .cv a, .exhibits a {
-  color: white;
-  font-size: 2em;
-  display: block;
-  padding: 30px;
 }
 
 .contact {
@@ -145,6 +164,7 @@ nav a:hover, nav a:focus{
 	background-position: center top;
 }
 
+
 /*FOOTER*/
 
 .social-icon {
@@ -155,42 +175,18 @@ nav a:hover, nav a:focus{
   box-shadow: 4px 4px 5px rgba(0,0,0, .4);
 }
 
-footer {
-  text-align: center;
-  text-shadow: 0 4px 2px rgba(0,0,0,1);
-}
 
 /*ABOUT*/
-
-h3 {
-  text-shadow: 0 4px 2px rgba(0,0,0,1);
-}
 
 .profile-photo {
   width: 90%;
   max-width: 360px;
-  margin-top: 20px;
-  box-shadow: inset 0px 0px 1px 1000px rgba(0,0,0, .2), 
-    5px 5px 5px rgba(0,0,0, .5);
-}
-
-.abouttext {
-  text-align: center;
+  margin-top: 10px;
 }
 
 /*CONTACT*/
 
-#form-messages {
-  text-align: center;
-}
-
 form {
-  font-family: 'Fredericka the Great', cursive;
-  text-align: center;
-  text-shadow: 0 4px 2px rgba(0,0,0,1);
-  margin: 20px 10px;
-  box-shadow: inset 0px 0px 1px 1000px rgba(0,0,0, .2), 
-    5px 5px 5px rgba(0,0,0, .5);
   border-radius: 10px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -200,18 +196,19 @@ form {
 }
 
 input {
-  font-family: 'Josefin Sans', sans-serif;
   border-radius: 5px;
-  width: 200px;
+}
+
+#name, #email {
+  min-width: 200px;
+  width: 70%;
+  height: 30px;
 }
 
 .submit {
   background-color: #555555;
-  font-family: 'Fredericka the Great', cursive;
   border-color: #444444;
   color: white;
-  font-size: 1.5em;
-  text-shadow: 0 4px 2px rgba(0,0,0,1);
   border-radius: 5px;
   width: initial;
 }
@@ -221,76 +218,22 @@ input {
 }
 
 textarea {
-  font-family: 'Josefin Sans', sans-serif;
   border-radius: 5px;
   width: 80%;
   height: 100px;
 }
 
-.forminfo, .forminterest, .formcomments {
-  font-size: 1.25em;
-}
-
-/*Before I created the html form*/
-
-/*#primary {
-  text-align: center;
-  margin-top: 30px;
-}
-#secondary {
-  text-align: center;
-}
-.contact-info {
-  list-style: none;
-  padding: 1px 40px 10px 30px;
-  background-image: url('../img/icons/email.png');
-  background-repeat: no-repeat;
-  background-size: 30px;
-  margin: 0 5px 10px 45px;
-}
-.mail a:hover, .mail a:focus {
-  font-weight: bold;
-}
-*/
 
 /*EXHIBITS*/
 
-.exh3 {
-  text-align: center;
-  text-shadow: 0 4px 2px rgba(0,0,0,1);
-}
-
-#exhibitslist a {
-  text-shadow: 0 4px 2px rgba(0,0,0,1);
-  font-weight: bold;
-}
-
-#exhibitslist a:hover , #exhibitslist a:focus {
-  font-style: italic;
-}
-
-#exhibitslist a:visited {
-  font-weight: normal;
-}
-
 #exhibitslist li {
-  margin:5px 5px 5px 0;
+  margin-bottom: 10px;
 }
 
 /*CV*/
 
 #pdf {
-  text-align: center;
   max-width: 666px
-}
-
-#pdf p {
-  font-size: 1.5em;
-}
-
-#pdf a {
-  text-shadow: 0 4px 2px rgba(0,0,0,1);
-  font-weight: bold;
 }
 
 /*PORTFOLIO*/
@@ -298,16 +241,11 @@ textarea {
 #portfoliolist, #apislist, 
 #connectionlist, #archivelist {
   list-style: none;
-  padding-right: 40px;
-}
-
-#portfoliolist h3 {
-  text-align: center;
+  padding-left: 0;
 }
 
 .sdcredit {
   display: inline-block;
-  font-size: 1.25em;
   font-style: italic;
   font-weight: lighter;
   margin-bottom: 24px;
@@ -315,260 +253,11 @@ textarea {
 
 #apislist img, #portfoliolist img, #connectionlist img,
 #archivelist img {
-  box-shadow: inset 0px 0px 1px 1000px rgba(0,0,0, .2), 
-    5px 5px 5px rgba(0,0,0, .5);
   max-width: 100%
-}
-
-/*APIS*/
-
-.apish3, .study {
-  text-align: center;
-  font-weight: normal;
 }
 
 /*CONNECTION*/
 
 .statement {
-  width: 80%;
-  margin: 0 10%;
-  text-align: center;
   max-width: 920px;
-}
-
-.statement p {
-  font-size: 1.5em;
-}
-
-/*MEDIA QUERIES*/
-
-@media only screen and (min-width: 540px) {
-
-  #containerdiv {
-    width: 100%;
-    float: left;
-    margin-top: 20px;
-  }
-
-  #containerdiv div {
-    float: left;
-    width: 45%;
-    margin-top: 0;
-  }
-
-  h1 {
-    width: 100%;
-    text-align: left;
-    margin: 10px 0 17px 10px;
-    font-size: 2.5em;
-  }
-
-  h1:after {
-    content: " ~ Fiber Artist";
-  }
-
-  h2 {
-    display: none;
-  }
-
-  .abouttext {
-    float: left;
-    width: 95%;
-    margin: 0 0 0 15px;
-  }
-
-  .profile-photo {
-    float: left;
-    width: 50%;
-    max-width: 360px;
-    margin: 0 10px 10px 10px;
-  }
-
-  .aboutdiv p {
-    font-size: 1.25em;
-  }
-
-  #primary, #secondary {
-    float: left;
-    width: 45%;
-    margin-left: 10px;
-  }
-
-  #secondary {
-    margin-top: 30px;
-  }
-
-}
-
-@media only screen and (min-width: 640px) {
-
-  .topnav {
-    text-align: left;
-    margin-right: 0;
-  }
-
-  .mainnav li {
-    padding: 0 5px;
-  }
-
-  #exhibitslist {
-    float: left;
-    width: 100%;
-  }
-
-  .col1, .col2 {
-    float: left;
-    width: 40%;
-  }
-
-  .col1 {
-    margin-right: 40px; 
-  }
-
-  #portfoliolist, #apislist, 
-  #connectionlist, #archivelist {
-    width: 100%;
-    float: left;
-    padding: 0;
-    margin: 20px;
-  }
-
-  #apislist li:nth-child(3n), #portfoliolist li:nth-child(3n) {
-    clear: left;
-  }
-
-  #apislist li:nth-child(6n) {
-    clear: right;
-  }
-
-  #portfoliolist li, #apislist li, 
-  #connectionlist li, #archivelist li {
-    float: left;
-    width: 45%;
-    margin: 0 10px 0 0;
-  }
-
-  #portfoliolist img, #apislist img, 
-  #connectionlist img, #archivelist img {
-    max-width: 100%;
-  }
-
-}
-
-@media only screen and (min-width: 740px) {
-
-  #containerdiv div {
-    font-size: 1.5em;
-  }
-
-  h1 {
-    font-size: 3em;
-  }
-
-  .navdiv { 
-    width: 170px; 
-    margin: 15px; 
-    position: relative; 
-  }
-
-  .mainnav { 
-    width: 170px; 
-    position: fixed; 
-    margin-left: 0; 
-  }
-
-  .abouttext, form, #exhibitslist, #portfoliolist, 
-  #apislist, #connectionlist, #archivelist, #pdf, .statement {
-    margin-left: 180px;
-    width: 75%;
-  }
-}
-
-@media only screen and (min-width: 840px) {
-
-  h1 {
-    font-size: 4em;
-  }
-}
-
-@media only screen and (min-width: 940px) {
-
-  #containerdiv {
-    width: 100%;
-  }
-
-  #containerdiv div {
-    width: 30%;
-  }
-
-  .abouttext {
-    margin-left: 170px;
-    width: 80%;
-  }
-
-  .formdiv {
-    float: left;
-  }
-
-  form {
-    margin-left: 20%;
-  }
-
-}
-
-@media only screen and (min-width: 1140px) {
-
-  #portfoliolist li:nth-child(3n), #apislist li:nth-child(3n), 
-  #apislist li:nth-child(6n) {
-    clear: none;
-  }
-
-  #portfoliolist li, #apislist li, 
-  #connectionlist li, #archivelist li {
-    width: 32%;
-  }
-
-  #apislist li:nth-child(4n), #connectionlist li:nth-child(4n) {
-    clear: left;
-  }
-
-  form, #pdf {
-    margin-left: 25%;
-  }
-
-}
-
-@media only screen and (min-width: 1440px) {
-
-}
-
-/*CLEARFIX*/
-
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/*OVERLAY*/
-/*
-#overlay {
-  background: rgba(0,0,0,0.7);
-  width: 100%;
-  min-height: 2500px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-  text-align: center;
-}
-
-#overlay img {
-  margin-top: 10%;
-  max-width: 90%;
-  max-height: 90%;
-}
-
-#overlay p {
-  color: white;
 }
