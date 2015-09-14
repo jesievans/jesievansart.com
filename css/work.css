@@ -71,7 +71,7 @@ form, .sdcredit {
   font-size: 1.25em;
 }
 
-#exhibitslist a:hover , #exhibitslist a:focus {
+#exhibitslist a:hover, #exhibitslist a:focus, #pdf a:hover, #pdf a:focus {
   font-style: italic;
 }
 
