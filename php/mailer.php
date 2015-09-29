@@ -21,7 +21,7 @@
         $recipient = "jesievans@gmail.com";
 
         // Set the email subject.
-        $subject = "New contact from $name";
+        $subject = "NEW CONTACT FROM Jesievansart.com $name";
 
         // Build the email content.
         $email_content = "Name: $name\n";

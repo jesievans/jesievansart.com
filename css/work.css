@@ -105,11 +105,13 @@ h2 {
 .dropdown:hover > .dropnav, .dropdown:focus > .dropnav {
   display: block;
   background-color: #555555;
+  border-radius: 10px;
 }
 
 .flyout:hover > .flyoutnav, .flyout:focus > .flyoutnav {
   display: block;
   background-color: #4C4C4C;
+  border-radius: 10px;
 }
 
 .selected {
@@ -227,7 +229,12 @@ textarea {
 /*EXHIBITS*/
 
 #exhibitslist li {
-  margin-bottom: 10px;
+  margin-bottom: 50px;
+  margin-top: 25px;
+}
+
+nav li {
+  list-style: none;
 }
 
 /*CV*/
